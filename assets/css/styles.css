@@ -142,11 +142,11 @@ img {
 }
 
 .swiper-button-prev {
-  left: -5;
+  left: -25;
 }
 
 .swiper-button-next {
-  right: -5;
+  right: -25;
 }
 
 .swiper-pagination-bullet {
