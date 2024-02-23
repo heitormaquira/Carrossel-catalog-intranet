@@ -142,11 +142,11 @@ img {
 }
 
 .swiper-button-prev {
-  left: -50;
+  left: -25;
 }
 
 .swiper-button-next {
-  right: -50;
+  right: -25;
 }
 
 .swiper-pagination-bullet {
@@ -167,9 +167,9 @@ img {
 }
 
 /* For medium devices */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 868px) {
   .card__content {
-    margin-inline: 3rem;
+    margin-inline: 0rem;
   }
 
   .swiper-button-next,
@@ -185,9 +185,9 @@ img {
   }
 
   .swiper-button-prev {
-    left: -1rem;
+    left: 1rem;
   }
   .swiper-button-next {
-    right: -1rem;
+    right: 1rem;
   }
 }
