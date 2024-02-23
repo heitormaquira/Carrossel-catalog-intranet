@@ -169,7 +169,7 @@ img {
 /* For medium devices */
 @media screen and (min-width: 868px) {
   .card__content {
-    margin-inline: 2rem;
+    margin-inline: 1rem;
   }
 
   .swiper-button-next,
@@ -181,7 +181,7 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .card__container {
-    max-width: 1320px;
+    max-width: 1220px;
   }
 
   .swiper-button-prev {
