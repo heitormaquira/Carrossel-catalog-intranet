@@ -138,7 +138,7 @@ img {
   font-size: 4rem;
   color: var(--second-color);
   display: non;
-  top: 18rem;
+  top: 19.5rem;
 }
 
 .swiper-button-prev {
@@ -185,9 +185,9 @@ img {
   }
 
   .swiper-button-prev {
-    left:1rem;
+    left:0.7rem;
   }
   .swiper-button-next {
-    right: 1rem;
+    right: 0.7rem;
   }
 }
