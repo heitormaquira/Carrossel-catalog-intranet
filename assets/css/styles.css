@@ -54,7 +54,7 @@ img {
 }
 
 .card__container {
-  padding-block: 9rem;
+  padding-block: 10rem;
 }
 
 .card__content {
@@ -138,7 +138,7 @@ img {
   font-size: 4rem;
   color: var(--second-color);
   display: non;
-  top: 19.5rem;
+  top: 25rem;
 }
 
 .swiper-button-prev {
