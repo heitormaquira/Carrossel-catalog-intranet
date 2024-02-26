@@ -185,9 +185,9 @@ img {
   }
 
   .swiper-button-prev {
-    left:0rem;
+    left:-2rem;
   }
   .swiper-button-next {
-    right: 0rem;
+    right: -2rem;
   }
 }
