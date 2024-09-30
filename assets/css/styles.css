@@ -41,8 +41,9 @@ a {
 
 img {
   display: block;
-  max-width:320px;
+  max-width: 320px;
   height: auto;
+ border-radius: 22.5px;
 }
 
 /*=============== CARD ===============*/
@@ -55,19 +56,15 @@ img {
 
 .card__container {
   padding-block: 9rem;
+  overflow: hidden; /* Isso irá ocultar qualquer conteúdo que ultrapasse o contêiner */
 }
 
 .card__content {
-  margin-inline: 1.75rem;
-  border-radius: 1.25rem;
+  margin-inline: 1.8rem;
+  border-radius: 1.8rem;
   overflow: hidden;
 }
 
-.card__article {
-  width: 350px; /* Remove after adding swiper js */
-  border-radius: 1.25rem;
-  overflow: hidden;
-}
 
 .card__image {
   position: relative;
@@ -76,53 +73,29 @@ img {
   margin-bottom: -.5rem;
 }
 
-.card__data {
-  background-color: var(--container-color);
-  padding: 1.5rem 2rem;
-  border-radius: 1rem;
-  text-align: center;
-  position: relative;
-  z-index: 10;
-}
 
 .card__img {
-  width: 350px;
+  width: 350px; /* Mantém o tamanho da imagem */
   margin: 0 auto;
   position: relative;
   z-index: 5;
+  transition: transform 0.3s ease; /* Transição suave da transformação da imagem */
 }
 
-.card__shadow {
-  width: 300px;
-  height: 300px;
-  background-color: var(--first-color-alt);
-  border-radius: 50%;
-  position: absolute;
-  top: 3.75rem;
-  left: 0;
-  right: 0;
-  margin-inline: auto;
-  filter: blur(45px);
-}
 
 .card__name {
   font-size: var(--h2-font-size);
   color: var(--second-color);
   margin-bottom: .75rem;
+  transition: color 0.3s ease; /* Transição suave da cor do nome */
 }
 
-.card__description {
-  font-weight: 500;
-  margin-bottom: 1.75rem;
-}
+/*=============== HOVER EFFECTS ===============*/
 
-.card__button {
-  display: inline-block;
-  background-color: var(--first-color);
-  padding: .75rem 5.5rem;
-  border-radius: 0.75rem;
-  color: var(--dark-color);
-  font-weight: 600;
+
+.card__article:hover .card__img {
+  transform: scale(1.04); /* Aumenta a imagem suavemente ao passar o mouse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10); /* Sombra suave ao passar o mouse */
 }
 
 /* Swiper class */
@@ -185,8 +158,9 @@ img {
   }
 
   .swiper-button-prev {
-    left:-1rem;
+    left: -1rem;
   }
+  
   .swiper-button-next {
     right: -1rem;
   }
