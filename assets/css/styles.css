@@ -3,8 +3,6 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(0, 0%, 100%);
   --first-color-light: hsl(0, 0%, 100%);
   --first-color-alt: hsl(0, 0%, 100%);
@@ -13,9 +11,7 @@
   --white-color: hsl(212, 4%, 95%);
   --body-color: hsla(0, 0%, 90%, 0);
   --container-color: hsl(0, 0%, 75%);
-
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+  --hover-color: hsl(0, 0%, 45%); /* Cor para o efeito hover */
   --body-font: "Bai Jamjuree", sans-serif;
   --h2-font-size: 1.25rem;
   --normal-font-size: 1rem;
@@ -41,9 +37,9 @@ a {
 
 img {
   display: block;
-  max-width: 320px;
+  max-width: 97%;
   height: auto;
- border-radius: 22.5px;
+  border-radius: 22.5px;
 }
 
 /*=============== CARD ===============*/
@@ -56,7 +52,7 @@ img {
 
 .card__container {
   padding-block: 9rem;
-  overflow: hidden; /* Isso irá ocultar qualquer conteúdo que ultrapasse o contêiner */
+  overflow: hidden;
 }
 
 .card__content {
@@ -65,7 +61,6 @@ img {
   overflow: hidden;
 }
 
-
 .card__image {
   position: relative;
   background-color: var(--first-color-light);
@@ -73,29 +68,26 @@ img {
   margin-bottom: -.5rem;
 }
 
-
 .card__img {
-  width: 350px; /* Mantém o tamanho da imagem */
+  width: 350px;
   margin: 0 auto;
   position: relative;
   z-index: 5;
-  transition: transform 0.3s ease; /* Transição suave da transformação da imagem */
+  transition: transform 0.3s ease;
 }
-
 
 .card__name {
   font-size: var(--h2-font-size);
   color: var(--second-color);
   margin-bottom: .75rem;
-  transition: color 0.3s ease; /* Transição suave da cor do nome */
+  transition: color 0.3s ease;
 }
 
 /*=============== HOVER EFFECTS ===============*/
 
-
 .card__article:hover .card__img {
-  transform: scale(1.04); /* Aumenta a imagem suavemente ao passar o mouse */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10); /* Sombra suave ao passar o mouse */
+  transform: scale(1.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 }
 
 /* Swiper class */
@@ -110,16 +102,21 @@ img {
   height: initial;
   font-size: 4rem;
   color: var(--second-color);
-  display: non;
-  top: 25rem;
+  top: 22rem;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: var(--hover-color); /* Cor ao passar o mouse */
 }
 
 .swiper-button-prev {
-  left: -50;
+  left: -35;
 }
 
 .swiper-button-next {
-  right: -50;
+  right: -35;
 }
 
 .swiper-pagination-bullet {
@@ -158,10 +155,10 @@ img {
   }
 
   .swiper-button-prev {
-    left: -1rem;
+    left: -0rem;
   }
-  
+
   .swiper-button-next {
-    right: -1rem;
+    right: -0rem;
   }
 }
