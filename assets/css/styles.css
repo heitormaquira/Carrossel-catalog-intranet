@@ -29,6 +29,7 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--white-color);
+  overflow-y: hidden; /* Remove a barra de rolagem vertical */
 }
 
 a {
