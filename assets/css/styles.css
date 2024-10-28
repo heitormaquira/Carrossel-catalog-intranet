@@ -3,8 +3,8 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --first-color: #f8f8f8;
-  --first-color-light:#f8f8f8;
+  --first-color: #ffffff;
+  --first-color-light:#ffffff;
   --first-color-alt: hsl(0, 0%, 100%);
   --second-color: hsl(0, 0%, 62%);
   --dark-color: hsla(0, 0%, 90%, 0);
